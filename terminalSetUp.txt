@@ -1,0 +1,28 @@
+these are the steps to make bash scripting work. aside from saving the file.
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+Nathans-MacBook-Pro-2:Bash Scripting Practice nathansmith$ ./questionnaire.sh
+bash: ./questionnaire.sh: Permission denied
+Nathans-MacBook-Pro-2:Bash Scripting Practice nathansmith$ which bash
+/bin/bash
+Nathans-MacBook-Pro-2:Bash Scripting Practice nathansmith$ ls -l
+total 0
+-rw-r--r--  1 nathansmith  staff  0 Mar 18 10:09 questionnaire.sh
+Nathans-MacBook-Pro-2:Bash Scripting Practice nathansmith$ chmod +x questionnaire.sh
+Nathans-MacBook-Pro-2:Bash Scripting Practice nathansmith$ ls -l
+total 0
+-rwxr-xr-x  1 nathansmith  staff  0 Mar 18 10:09 questionnaire.sh
+Nathans-MacBook-Pro-2:Bash Scripting Practice nathansmith$ ./questionnaire.sh
+
+~~ Questionnaire ~~
+
+What's your name?
+Nathan
+Where are you from?
+Utah
+What's your favorite coding website?
+freecodecamp.org
+
+Hello Nathan from Utah. I learned that your favorite coding website is freecodecamp.org!
